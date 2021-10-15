@@ -37,3 +37,10 @@ export PS1
 
 
 # Файлы профиля нового пользователя по умолчанию на ходятся в каталоге /etc/skel
+
+
+# Настройка истории команд
+export HISTSIZE=10000
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+PROMPT_COMMAND='history -a'
+export HISTIGNORE="ls:ll:history:w:htop:pwd"
